@@ -26,13 +26,14 @@ class Teacher extends Person {
 }
 let person = new Person("albert",29);
 console.log(person.name);
-console.log(person.age);
+person.age = 30;
+
 let student = new Student("Albert",20);
 console.log(student.name);
-console.log(student.age);
+student.study();
 let teacher = new teacher("janni",25);
 console.log(teacher.name);
-console.log(teacher.age);
+teacher.teach();
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
